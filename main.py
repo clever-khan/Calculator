@@ -18,7 +18,12 @@ def divide(nd1, nd2):
     return nd1 / nd2
 
 
-operations = {"+": add, "-": subtract, "*": multiply, "/": divide}
+operations = {
+    "+": add,
+    "-": subtract,
+    "*": multiply,
+    "/": divide
+}
 
 
 def calculator():
@@ -36,13 +41,8 @@ def calculator():
         answer = calculation_function(num1, num2)
         print(f"{num1} {operation_symbol} {num2} = {answer}")
 
-        if (
-            input(
-                f"Type 'y' to continue calculating with {answer}, \
-        or type 'n' to start a new calculation: "
-            )
-            == "y"
-        ):
+        if input(f"Type 'y' to continue calculating with {answer}, \
+        or type 'n' to start a new calculation: ") == "y":
             num1 = answer
         else:
             should_continue = False
