@@ -1,4 +1,3 @@
-""" module """
 def add(na1, na2):
     """ This function will return the sum of two numbers """
     return na1 + na2
